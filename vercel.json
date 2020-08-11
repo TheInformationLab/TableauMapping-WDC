@@ -1,0 +1,19 @@
+{
+    "public": false,
+    "version" : 2,
+    "alias": "tableaumapping.bi WDC",
+    "env": {
+        "DBUSER": "@tableaumapping_dbuser",
+        "DBPASS": "@tableaumapping_dbpass",
+        "JWTSECRET": "@tableaumapping_jwtsecret"
+    },
+    "builds": [
+        {   
+            "src" : "bin/www",
+            "use": "@now/node-server"
+        }
+    ],
+    "routes" : [ 
+        {"src": "/(.*)", "dest": "bin/www"}
+    ]
+}

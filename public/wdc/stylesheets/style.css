@@ -1,0 +1,124 @@
+html {
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  background: #fafafa;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+a.danger {
+  color: red;
+}
+
+.spacing {
+  margin-bottom: 20px;
+}
+
+.mat-menu-panel {
+  max-width: none !important;
+  max-height: 80vh !important;
+}
+
+.leaflet-top {
+  top: 30px !important;
+}
+
+tableau-mapping {
+  height: 100vh;
+  width: 100%;
+}
+
+.loading {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+.displayContainer {
+    display: block;
+    height: 100vh;
+    width: 100%;
+}
+
+.centerPseudo {
+    display: inline-block;
+    text-align: center;
+}
+.centerPseudo::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0px;
+}
+#loading {
+    height: 100px;
+    width: 100px;
+}
+
+.mdl-layout__header-row {
+    padding: 0 16px;
+    color: rgba(255,255,255,.87);
+}
+
+.card-container {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 30px;
+}
+
+.mdl-card {
+  margin: 0 100px 16px 100px;
+  transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  display: block;
+  position: relative;
+  padding: 24px;
+  border-radius: 2px;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  width: auto;
+}
+.mdl-card__title, .mdl-card__supporting-text {
+  padding: 0;
+  color: black;
+}
+.mdl-card__title-text {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 8px;
+}
+.mdl-card__title .material-icons {
+  height: 40px;
+  width: 40px;
+}
+
+.mdl-card__supporting-text {
+  width: auto;
+}
+
+.mdl-card__supporting-text p {
+  margin-bottom: 10px;
+  line-height: normal;
+}

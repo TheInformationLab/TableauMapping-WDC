@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+    <title>TableauMapping.bi</title>
+    <link rel="stylesheet" href="/wdc/stylesheets/material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/wdc/stylesheets/indigo-pink.css" rel="stylesheet">
+    <link rel='stylesheet' href='/wdc/stylesheets/style.css'/>
+</head>
+<body class="mat-app-background">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-shadow--8dp">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">TableauMapping.bi</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/map"><i class="material-icons">map</i></a>
+        <a class="mdl-navigation__link" href="/wdc"><i class="material-icons">cloud_download</i></a>
+        <a class="mdl-navigation__link" href="/profile"><i class="material-icons">account_circle</i></a>
+        <a class="mdl-navigation__link" href="/help"><i class="material-icons">help</i></a>
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="card-container" layout="row" layout-align="center">
+        <div class="mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text"><i class="material-icons">cloud_download</i> Connecting with Web Data Connector</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <p>If you're seeing this message you need to access the URL using Tableau's Web Data Connector.</p>
+            <p>Copy the URL from your web browser <b>https://www.tableaumapping.bi/wdc-legacy</b>, open Tableau Desktop, in the connections list select 'Web Data Connector' and paste the URL into the connector. Then it's just like a regular Tableau data source.</p>
+            <p>You'll need Tableau 10.1, 10.2 or 10.3. If you've got 10.4 or newer why not use our latest connector at <b>https://www.tableaumapping.bi/wdc</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="card-container" layout="row" layout-align="center">
+        <div class="mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text"><i class="material-icons">layers</i> Building Your Map</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <p>If you're using an older version of Tableau, don't worry we've got you covered! You'll just need to build your map using the polygon mark. Here's how:</p>
+            <p><img [src]="buildPolygon" width="600px" /></p>
+            <ol>
+              <li>Change the mark type to <b>Polygon</b></li>
+              <li>Drag the dimenion <b>-> Path</b> to the Path drop zone</li>
+              <li>Drag both <b>-> Polygon ID</b> and <b>-> Sub Polygon ID</b> onto level of detail</li>
+              <li>Either double click <b>-> Latitude</b> or drag it to the Rows shelf</li>
+              <li>Either douple click <b>-> Longitude</b> or drag it to the Columns shelf</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script src="/wdc/public/js/tableauwdc-2.1.latest.min.js"></script>
+<script src="/wdc/public/js/jquery-3.2.1.min.js"></script>
+<script src="/wdc/public/js/material.min.js"></script>
+<script src="/wdc/public/js/wdc.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 849340409;
+var google_conversion_label = "EchACP-wkHIQ-c__lAM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/849340409/?value=1.00&amp;currency_code=GBP&amp;label=EchACP-wkHIQ-c__lAM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27427363-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
